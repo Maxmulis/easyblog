@@ -1,13 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  text: MyText
-  name: MyString
-  article: one
+  title: Toller Artikel, danke!
+  text: Sehr interessant und hilfreich.
+  name: Max
+  article: first
 
 two:
-  title: MyString
-  text: MyText
-  name: MyString
-  article: two
+  title: Geht so.
+  text: Eher langweilig...
+  name: Someone
+  article: first
+
+three:
+  title: Ganz großes Kino!
+  text: Echt schlauer Artikel...
+  name: Horst
+  article: second

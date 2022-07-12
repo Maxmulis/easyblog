@@ -1,13 +1,22 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  text: MyText
-  date: 2022-07-10
-  user: one
+first:
+  title: First Article
+  text: This is a great article about great stuff.
+  date: 2022-07-08
+  updated_at: <%= DateTime.current.to_s %>
+  user: johannes
 
-two:
-  title: MyString
-  text: MyText
-  date: 2022-07-10
-  user: two
+second:
+  title: Second Article
+  text: Another awesome article
+  date: 2022-07-08
+  updated_at: <%= DateTime.current.yesterday.to_s %>
+  user: christian
+
+third:
+  title: Third Article
+  text: And another super cool article.
+  date: 2022-07-08
+  updated_at: <%= (DateTime.current.yesterday. -1).to_s %>
+  user: christian
