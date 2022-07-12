@@ -15,9 +15,9 @@ class ArticlesTest < ApplicationSystemTestCase
 
     click_on articles(:first).title
     fill_in "Title", with: "New Comment"
-    fill_in "Text", with: "New Text"
+    fill_in "Comment", with: "New Text"
     fill_in "Name", with: "Horst"
-    click_on "Create comment"
+    click_on "Create Comment"
 
     assert_text "New Comment"
     assert_text "New Text"

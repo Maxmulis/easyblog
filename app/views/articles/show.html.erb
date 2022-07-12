@@ -1,2 +1,10 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<p><%=link_to "Back", articles_path%></p>
+<h3><%= link_to @article.title, article_path(@article) %></h3>
+<p><%= @article.text %></p>
+<p>Author: <%= @article.author.username %></p>
+<p>Last edited: <%= @article.updated_at.strftime("%e %b %Y %H:%M:%S%p") %></p>
+
+<h4>Comments</h4>
+<%= render @comments %>
+
+<%= render partial: 'comments/comment_form', locals: {comment: @comment, article: @article} %>
