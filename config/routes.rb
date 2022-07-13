@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   resources :articles, only: [:show, :new, :create, :index] do
     resources :comments, only: [:create]
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
+  post "login", to: "sessions#create"
+  delete "logout", to: "sessions#destroy"
+  get "login", to: "sessions#new", as: "login_page"
   root "articles#index"
 end
