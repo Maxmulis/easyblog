@@ -1,2 +1,5 @@
 <h1>Articles</h1>
+<%= link_to "Login", login_page_path unless user_signed_in? %>
+<%= button_to "Logout", logout_path, method: :delete if user_signed_in? %>
+<%= link_to "New Article", new_article_path if user_signed_in? %>
 <%= render @articles %>
