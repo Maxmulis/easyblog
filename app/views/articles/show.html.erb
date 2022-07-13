@@ -1,4 +1,4 @@
-<p><%=link_to "Back", articles_path%></p>
+<p><%=link_to "Back to all articles", articles_path%></p>
 <h3><%= link_to @article.title, article_path(@article) %></h3>
 <p><%= @article.text %></p>
 <p>Author: <%= @article.author.username %></p>
