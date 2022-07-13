@@ -3,20 +3,17 @@
 first:
   title: First Article
   text: This is a great article about great stuff.
-  date: 2022-07-08
   updated_at: <%= DateTime.current.to_s %>
   author: johannes
 
 second:
   title: Second Article
   text: Another awesome article
-  date: 2022-07-08
   updated_at: <%= DateTime.current.yesterday.to_s %>
   author: christian
 
 third:
   title: Third Article
   text: And another super cool article.
-  date: 2022-07-08
   updated_at: <%= (DateTime.current.yesterday. -1).to_s %>
   author: christian
