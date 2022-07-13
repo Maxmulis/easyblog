@@ -7,3 +7,7 @@ johannes:
 christian:
   username: christian
   password_digest: <%= BCrypt::Password.create('easybill1234') %>
+
+horst:
+  username: horst
+  password_digest: <%= BCrypt::Password.create('easybill1234') %>

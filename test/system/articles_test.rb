@@ -10,6 +10,7 @@ class ArticlesTest < ApplicationSystemTestCase
     assert_text articles(:first).author.username
 
   end
+
   test "commenting on an article" do
     visit root_url
 
@@ -21,6 +22,22 @@ class ArticlesTest < ApplicationSystemTestCase
 
     assert_text "New Comment"
     assert_text "New Text"
+  end
+
+  test "creating an article" do
+    visit root_url
+
+    click_on "New Article"
+    fill_in "Username", with: articles(:first).author.username
+    fill_in "Password", with: "easybill1234"
+
+    fill_in "Title", with: "New Article"
+    fill_in "Text", with: "New Text"
+    click_on "Create Article"
+
+    assert_text "New Article"
+    assert_text "New Text"
+    assert_text "horst"
   end
 
 end
