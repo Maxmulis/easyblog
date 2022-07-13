@@ -30,15 +30,16 @@ class ArticlesTest < ApplicationSystemTestCase
     click_on "Login"
     fill_in "Username", with: articles(:first).author.username
     fill_in "Password", with: "easybill1234"
+    click_on "Sign In"
 
     click_on "New Article"
     fill_in "Title", with: "New Article"
     fill_in "Text", with: "New Text"
-    click_on "Create Article"
+    click_on "Save Article"
 
     assert_text "New Article"
     assert_text "New Text"
-    assert_text "horst"
+    assert_text "johannes"
   end
 
 end
