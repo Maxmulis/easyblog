@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails blog web application. Anonymous users can comment on blog articles, while only registered users can create new articles. User authentication is not handled by a gem like Devise, but a custom SessionsController. Thanks to Steve Polito for writing a great and comprehensive guide on [rails authentication from scratch](https://github.com/stevepolitodesign/rails-authentication-from-scratch).
 
-Things you may want to cover:
+## Installation
+1. Make sure to have Ruby 3.0.3 installed on your machine.
+2. Clone this repo.
+3. Run `bin/setup` to download and install gems and their dependencies, create the database, run migrations and seed the database with test data.
+4. Start the server with `rails s`
 
-* Ruby version
+## Tests
+Run `rails test:system` to run the test suite.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## How to contribute
+Don't. This was a coding challenge 😉
