@@ -1,6 +1,6 @@
 # README
 
-This is a simple Rails blog web application. Anonymous users can comment on blog articles, while only registered users can create new articles. User authentication is not handled by a gem like Devise, but a custom SessionsController. Thanks to Steve Polito for writing a great and comprehensive guide on [rails authentication from scratch](https://github.com/stevepolitodesign/rails-authentication-from-scratch).
+This is a simple blog web application built with Rails 7. Anonymous users can comment on blog articles, while only registered users can create new articles. User authentication is not handled by a gem like Devise, but a custom SessionsController. Thanks to Steve Polito for writing a great and comprehensive guide on [rails authentication from scratch](https://github.com/stevepolitodesign/rails-authentication-from-scratch).
 
 ## Installation
 1. Make sure to have Ruby 3.0.3 installed on your machine.
